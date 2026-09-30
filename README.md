@@ -1,50 +1,24 @@
-# \# SnapShield
+# \# 🛡️ SnapShield
 
 # 
 
-# \## On-Device AI Cybersecurity Assistant for Snapdragon-Powered HP PCs
+# \## On-Device AI Cybersecurity Assistant
 
 # 
 
-# SnapShield is a privacy-first cybersecurity prototype that performs
-
-# AI-assisted security event classification and network anomaly assessment
-
-# locally on the user's PC.
+# \*\*Privacy-first security monitoring with lightweight local AI and a Snapdragon deployment target.\*\*
 
 # 
 
-# The system is designed around a future Snapdragon deployment model where
-
-# AI inference can be optimized for Qualcomm hardware and the Snapdragon NPU.
+# SnapShield is a cybersecurity prototype that performs AI-assisted security analysis directly on a Windows endpoint.
 
 # 
 
-# \---
+# It monitors local network activity, extracts behavioral features, analyzes security events using lightweight machine-learning models, and presents the results through an interactive dashboard.
 
 # 
 
-# \## Problem
-
-# 
-
-# Traditional endpoint security systems may rely heavily on cloud-based
-
-# analysis. This can introduce:
-
-# 
-
-# \- Privacy concerns
-
-# \- Network dependency
-
-# \- Additional latency
-
-# \- Reduced control over local telemetry
-
-# 
-
-# SnapShield explores a local-first alternative.
+# The architecture is designed with a future deployment path toward \*\*Snapdragon-powered HP PCs\*\* and Qualcomm's supported AI deployment ecosystem.
 
 # 
 
@@ -52,45 +26,37 @@
 
 # 
 
-# \## Solution
+# \## 🎯 Problem
 
 # 
 
-# SnapShield continuously observes local network activity and provides
-
-# AI-assisted security assessment.
+# Modern computers continuously generate security-relevant activity such as:
 
 # 
 
-# \### Core pipeline
+# \- Network connections
+
+# \- Listening ports
+
+# \- Remote endpoints
+
+# \- Suspicious processes
+
+# \- Authentication events
+
+# \- System activity
 
 # 
 
-# Windows network telemetry
-
-# &#x20;       ↓
-
-# Feature extraction
-
-# &#x20;       ↓
-
-# Local AI network assessment
-
-# &#x20;       ↓
-
-# Risk + confidence
-
-# &#x20;       ↓
-
-# Explanation + recommended action
-
-# &#x20;       ↓
-
-# Streamlit security dashboard
+# Security analysis can rely heavily on centralized or cloud-based processing. This can introduce privacy concerns, network dependency, and additional latency.
 
 # 
 
-# The project also supports manual security-event analysis.
+# SnapShield explores a local-first approach:
+
+# 
+
+# > \*\*Bring lightweight security intelligence closer to the endpoint.\*\*
 
 # 
 
@@ -98,19 +64,55 @@
 
 # 
 
-# \## Key Features
+# \## 💡 Solution
 
 # 
 
-# \### 1. Local Network Monitoring
+# SnapShield combines:
 
 # 
 
-# SnapShield collects network information from the local Windows system,
+# \- Local network telemetry
 
-# including:
+# \- Lightweight machine learning
+
+# \- Security-event classification
+
+# \- Network behavior assessment
+
+# \- Explainable results
+
+# \- Recommended security actions
+
+# \- Interactive visualization
 
 # 
+
+# The system processes the prototype's security telemetry locally instead of intentionally sending it to a cloud security-analysis service.
+
+# 
+
+# \---
+
+# 
+
+# \## ✨ Key Features
+
+# 
+
+# \### 🌐 Live Network Monitoring
+
+# 
+
+# SnapShield observes local network activity using `psutil`.
+
+# 
+
+# It tracks:
+
+# 
+
+# \- Total connections
 
 # \- Established connections
 
@@ -124,19 +126,19 @@
 
 # 
 
-# The monitor is read-only and does not automatically block or terminate
-
-# connections.
+# The network monitor is read-only and does not automatically terminate connections.
 
 # 
 
-# \### 2. AI Network Assessment
+# \### 🧠 AI Network Assessment
 
 # 
 
-# A lightweight prototype ML classifier analyzes network-level features and
+# A lightweight network classifier analyzes current network behavior.
 
-# produces:
+# 
+
+# The result contains:
 
 # 
 
@@ -144,17 +146,25 @@
 
 # \- Confidence
 
+# \- Network features
+
 # \- Explanation
 
 # \- Recommended action
 
-# 
-
-# \### 3. Security Event Classification
+# \- Model information
 
 # 
 
-# Users can provide security events such as:
+# \### 🔍 Security Event Analysis
+
+# 
+
+# SnapShield can analyze manually entered security events.
+
+# 
+
+# Example:
 
 # 
 
