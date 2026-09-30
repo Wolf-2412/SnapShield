@@ -1,0 +1,17 @@
+[
+  {
+    "event_type": "network",
+    "source": "local",
+    "message": "unusual outbound connection detected from unknown process"
+  },
+  {
+    "event_type": "process",
+    "source": "local",
+    "message": "powershell encoded command observed"
+  },
+  {
+    "event_type": "authentication",
+    "source": "local",
+    "message": "normal interactive login"
+  }
+]
